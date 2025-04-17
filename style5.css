@@ -1,0 +1,120 @@
+/* a:hover{
+    color: red;
+    font-size: larger;
+} */
+
+/* button:hover{
+    padding:5px;
+    margin: 5px;
+    background-color: lightblue;
+    border-radius: 10px;
+} */
+
+/* button:active{
+    color: red;
+}
+
+button:not(:hover){
+    background-color: yellow;
+    border-radius: 10%;
+} */
+
+/* ul li:hover{
+    background-color: yellow;
+}
+
+ul li:not(:hover){
+    background-color: lightgray;
+} */
+
+/* ul li:nth-child(2n-1){
+    background-color: yellow;
+} */
+
+/* ul li{
+    cursor: pointer;
+} */
+/* button{
+    cursor: move;
+    padding: 30px;
+} */
+
+/* div{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000;
+    animation: colorChange;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideRight {
+    to{
+        transform: translateX(100%)
+    }
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideDown {
+    to{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes grow {
+    50%{
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes shrink {
+    50%{
+        transform: scale(0.1, 0.1);
+    }
+}
+
+@keyframes rotate {
+    50%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes fade{
+    50%{opacity: 0.5;}
+}
+
+@keyframes colorChange {
+    0%{background-color: aqua;}
+    20%{background-color: red;}
+    40%{background-color: yellow;}
+    60%{background-color: purple;}
+    80%{background-color: green;}
+    100%{background-color: black;}
+} */
+
+
+
+
+/* p{
+    background-color: aqua;
+    font-size: 30px;
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+    p{
+        background-color: yellow;
+        font-family: Comic Sans MS;
+    }
+} */
