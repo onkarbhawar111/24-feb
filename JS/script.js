@@ -721,20 +721,51 @@
 
 //ERROR HANDLING 
 
-console.log("Start")
+// console.log("Start")
 
-try{
-    let x = 20;
-    // let y = 5
-    console.log(x/y)         //4
-    
-    console.log('code after division')
-    console.log('last line of try block')
+// try{
+//     let x = 20;
+//     // let y = 5
+//     console.log(x/y)         //4
 
-} catch(err1){
-    console.log("Error: ", err1)
-} finally{
-    console.log('finally block executed')
-}
+//     console.log('code after division')
+//     console.log('last line of try block')
 
-console.log("End")
+// } catch(err1){
+//     console.log("Error: ", err1)
+// } finally{
+//     console.log('finally block executed')
+// }
+
+// console.log("End")
+
+
+// function getRectArea(width, height) {     //width=3, height=5
+//     if (isNaN(width) || isNaN(height)) {
+//         throw new Error('Parameter is not a number!!!!');
+//     }
+//     return console.log("Area: ", height * width)
+// }
+// try {
+//     getRectArea(3, 'six');
+// } catch (e) {
+//     console.error("Error:   ", e);
+// }
+
+
+
+// const person = {
+//     fname: "Onkar",
+//     lname: "Bhawar",
+//     age: 27,
+//     fullName: function(){
+//         return `I am ${this.fname} ${this.lname}`
+//     }
+// }
+
+// console.log(person.fullName())
+
+// console.log("Helllo WOrld")
+// window.console.log("Hello World ...")
+
+// window.prompt('HEllo Everyone, this is pop up window ')
