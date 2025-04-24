@@ -768,4 +768,124 @@
 // console.log("Helllo WOrld")
 // window.console.log("Hello World ...")
 
-// window.prompt('HEllo Everyone, this is pop up window ')
+// window.prompt('Hello Everyone, this is pop up window ')
+
+// window.console.log(window)
+
+
+// let x = document.getElementById('z1')
+
+// console.log(x.textContent)
+
+// let x = document.getElementsByClassName('cls1')
+// console.log(x[0].textContent)
+
+// console.log(x[1].textContent)
+
+// let x = document.getElementsByTagName('h2')
+
+// console.log(x[0].textContent)
+// console.log(x[1].textContent)
+// console.log(x[2].textContent)
+
+// let x = document.querySelector('h2')
+// console.log(x.textContent)
+
+// let x = document.querySelectorAll('.cls4')
+// console.log(x[0].textContent)
+// console.log(x[1].textContent)
+
+// let element = document.querySelectorAll('#i2')
+// console.log(element[0].textContent)
+
+// let ele = document.querySelectorAll('#i2')
+// console.log(ele[0].tagName)
+// console.log(ele[1].textContent)
+// console.log(ele[2].textContent)
+
+
+
+// let ele = document.getElementsByClassName('cls4')
+// console.log(ele[1].tagName)
+
+// let x = document.getElementById('m11')
+// console.log(x.textContent)
+// console.log(x.innerText)
+
+// x.textContent = 'My name is Onkar.'
+// console.log(x.innerHTML)
+
+
+
+// let element = document.querySelector('img')
+
+// element.setAttribute('src', '111https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D')
+
+// element.setAttribute('alt', 'New Image broken')
+
+// const x = element.getAttribute('alt')
+// console.log(x)
+
+
+
+// let p = document.getElementsByClassName('cls1')
+
+// // console.log(p[0].)
+
+// p[0].style.color = 'red'
+// p[0].style.backgroundColor = 'black'
+// p[0].style.border = '2px solid red'
+// p[0].style.borderRadius = '10px'
+
+
+
+// console.log(p[0].style.color)
+
+// background-color ----> backgroundColor
+
+
+
+// let div = document.getElementById('d1')
+
+// let newElement = document.createElement('span')
+// newElement.textContent = "World !"
+
+// div.append(newElement)
+// div.prepend(newElement)
+
+// div.after(newElement)
+
+// div.before(newElement)
+
+// div.remove()
+
+
+// let btn = document.getElementsByTagName('button')
+
+// btn[0].onclick = (e) => {
+//     console.log('btn 1 .....')
+//     console.log(e.clientX)
+//     console.log(e.clientY)
+//     console.log(e.target.tagName)
+// }
+// btn[1].ondblclick = () => {
+//     console.log('btn 2 .....')
+//     alert('btn 2 clicked......')
+// }
+
+// let div = document.querySelector('div')
+
+// div.onmouseover = () =>{
+//     console.log('div hovered....')
+// }
+
+
+
+
+let btn = document.querySelector('button')
+const fn = function(){
+    console.log('btn 1111111111')
+}
+btn.addEventListener('click', fn )
+
+btn.removeEventListener('click', fn)
