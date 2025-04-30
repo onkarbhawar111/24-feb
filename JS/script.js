@@ -882,10 +882,343 @@
 
 
 
-let btn = document.querySelector('button')
-const fn = function(){
-    console.log('btn 1111111111')
-}
-btn.addEventListener('click', fn )
+// let btn = document.querySelector('button')
+// const fn = function(){
+//     console.log('btn 1111111111')
+// }
+// btn.addEventListener('click', fn )
 
-btn.removeEventListener('click', fn)
+// btn.removeEventListener('click', fn)
+
+
+
+
+
+// class Person {
+//     constructor() {
+//        console.log('ctor called')
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     }
+// }
+
+
+
+
+// class Person {
+//     constructor(name, age) {
+//         console.log('ctor called')
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     }
+// }
+
+
+
+// const obj1 = new Person("Onkar", 27);
+// console.log(obj1.name)
+// obj1.greet()
+
+
+// class Employee extends Person {
+//     constructor(name, age, job) {
+//         super(name, age);  
+//         this.job = job;
+//     }
+
+//     work() {
+//         console.log(`${this.name} is working as a ${this.job}.`);
+//     }
+// }
+
+// const employee1 = new Employee('Bob', 30, 'Developer');
+// employee1.greet();   
+// employee1.work();    
+
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// class Employee extends Person {
+//     constructor(name, age, job) {
+//         super(name, age);    
+//         this.job = job;   
+//     }
+
+//     displayJob() {
+//         console.log(`${this.name} works as a ${this.job}.`);
+//     }
+// }
+
+// const emp1 = new Employee('Alice', 30, 'Engineer');
+// console.log(emp1.name); 
+// console.log(emp1.age); 
+// emp1.displayJob();      
+
+
+
+// class Animal {
+//     speak() {
+//         console.log('Animal speaks');
+//     }
+// }
+
+// class Dog extends Animal {
+//     speak() {
+//         super.speak();
+//         console.log('Dog barks');
+//     }
+// }
+
+// const dog = new Dog();
+// dog.speak();
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name; // Public property
+//         let _age = age; // Private variable (not accessible outside)
+
+//         this.getAge = function () {
+//             return _age;
+//         };
+
+//         this.setAge = function (newAge) {
+//             if (newAge > 0) _age = newAge;
+//             else console.log("Invalid age");
+//         };
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name}`);
+//     }
+// }
+
+// const person1 = new Person("Alice", 25);
+// console.log(person1.name); // Alice
+// console.log(person1.getAge()); // 25
+
+// person1.setAge(30);
+// console.log(person1.getAge()); // 30
+
+// person1.setAge(-5); // Invalid age
+
+
+
+// class Car {
+//     constructor(model) {
+//         this.model = model;
+//     }
+
+//     start() {
+//         console.log("Car is starting...");
+//         this._fuelInjection(); // Private method
+//     }
+
+//     _fuelInjection() {
+//         console.log("Fuel injection process...");
+//     }
+// }
+
+// const car1 = new Car("Tata");
+// car1.start();
+
+
+// class Animal {
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     speak() {
+//         console.log(`${this.name} makes a sound`);
+//     }
+// }
+
+// class Dog extends Animal {
+//     constructor(name, breed) {
+//         super(name); // Call parent constructor
+//         this.breed = breed;
+//     }
+
+//     speak() {
+//         console.log(`${this.name} barks`);
+//     }
+// }
+
+// const dog1 = new Dog("Buddy", "Golden Retriever");
+// dog1.speak(); // Output: Buddy barks
+
+
+// class Animal {
+//     speak() {
+//         console.log("This animal makes a sound");
+//     }
+// }
+
+// class Cat extends Animal {
+//     speak() {
+//         console.log("Meow Meow!");
+//     }
+// }
+
+// class Dog extends Animal {
+//     speak() {
+//         console.log("Woof Woof!");
+//     }
+// }
+
+// const animals = [new Animal(), new Cat(), new Dog()];
+
+// animals.forEach((animal) => animal.speak());
+
+
+
+// console.log('Start');
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
+// console.log('End');
+
+
+
+// console.log('Start');
+// setTimeout(() => {
+//   console.log('Asynchronous task'); 
+// }, 2000);
+// console.log('End');
+
+
+
+// function greet(name, callback) {
+//     console.log('Hello, ' + name);
+//     callback(); // Synchronous callback
+// }
+
+// function afterGreet() {
+//     console.log('Greeting completed.');
+// }
+
+// greet('Onkar', afterGreet);
+
+
+
+
+
+
+// function fetchData(callback) {
+//     setTimeout(() => {
+//         console.log('Data fetched from server');
+//         callback(); // Asynchronous callback
+//     }, 2000);                                               // Simulates 2 seconds delay
+// }
+
+// function processData() {
+//     console.log('Processing fetched data...');
+// }
+
+// console.log('Start');
+// fetchData(processData);                                      // Asynchronous
+// console.log('End');
+
+
+
+// function greet(name) {
+//     return `Hello, ${name}!`;
+// }
+
+// function processUserInput(callback) {
+//     const userName = "Onkar";
+//     return callback(userName); // Passing greet as the callback
+// }
+
+// console.log(processUserInput(greet)); // Output: Hello, John!
+
+
+
+// function multiplier(factor) {
+//     return function (num) {
+//         return num * factor;
+//     };
+// }
+
+// // const double = multiplier(2); // Returns a function that doubles a number
+// const triple = multiplier(3); // Returns a function that triples a number
+
+// // console.log(double(5)); // Output: 10
+// console.log(triple(5)); // Output: 15
+
+
+// setTimeout(() => {
+//     console.log('Step 1: Prepare ingredients');
+//     setTimeout(() => {
+//         console.log('Step 2: Cook food');
+//         setTimeout(() => {
+//             console.log('Step 3: Serve food');
+//             setTimeout(() => {
+//                 console.log('Step 4: Clean dishes');
+//             }, 1000);
+//         }, 1000);
+//     }, 1000);
+// }, 1000);
+
+
+// let promise = new Promise(function (resolve, reject) {
+//     let isLogin = true;
+//     if (isLogin) {
+//         setTimeout(() => {
+//             resolve("You are logged in...")
+//         });
+//     } else {
+//         reject("You are not logged in. Please Login")
+//     }
+// })
+// console.log(promise)
+
+// // console.log(promise)
+// promise.then((res) => {
+//     console.log('Then: ', res)
+// }).catch((err) => {
+//     console.log("Error: ", err)
+// })
+
+
+
+
+// async function getData() {
+//     let result = await fetch("https://jsonplaceholder.typicode.com/users");
+//     let data = await result.json(); // Extract the JSON body
+//     console.log(data);
+
+//     let d1 = document.querySelector('h2')
+//     d1.innerText += data[0].name
+// }
+// getData();
+// console.log(2 + 3);
+
+// add()
+
+// function add(){
+//     console.log('fn called')
+// }
+
+
+// const add = () =>{
+//     console.log('fn called.........')
+// }
+
+//var x;
+
+// console.log(x)
+
+// var x = 100
